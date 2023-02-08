@@ -81,12 +81,12 @@ https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-d
         restart: unless-stopped
         env_file: .env
         environment:
-        - MYSQL_DATABASE=wordpress
+            - MYSQL_DATABASE=wordpress
         volumes:
-        - dbdata:/var/lib/mysql
+            - dbdata:/var/lib/mysql
         command: '--default-authentication-plugin=mysql_native_password'
         networks:
-        - app-network
+            - app-network
 
 >добавил определение для службы приложения wordpress:
 
