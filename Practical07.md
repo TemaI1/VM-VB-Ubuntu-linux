@@ -6,7 +6,8 @@
 
 >touch test.txt test2.bak test3.tmp test4.backup создал файлы
 
-    cat > testSc создал файл с содержимым:
+>cat > testSc создал файл с содержимым:
+
     #!/bin/bash
     if [ -d $1 ]
     then
